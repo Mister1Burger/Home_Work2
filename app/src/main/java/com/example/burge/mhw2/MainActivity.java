@@ -81,18 +81,22 @@ public class MainActivity extends AppCompatActivity
         switch (item.getItemId()) {
             case R.id.text1:
                 getFragmentManager().beginTransaction()
-                        .replace(R.id.fragment1, new FirstFragment())
+                        .replace(R.id.fragment, new FirstFragment())
                         .commit();
                 break;
             case R.id.text2:
-
+                getFragmentManager().beginTransaction()
+                        .replace(R.id.fragment, new SecondFragment())
+                        .commit();
                 break;
             case R.id.nav_slideshow:
                 break;
             case R.id.nav_send:
                 break;
             case R.id.text3:
-
+                getFragmentManager().beginTransaction()
+                        .replace(R.id.fragment, new ThirdFragment())
+                        .commit();
                 break;}
 
 
